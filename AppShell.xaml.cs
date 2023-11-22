@@ -1,10 +1,18 @@
-﻿namespace sirmoloko
+﻿namespace sirmoloko;
+
+
+public partial class App : Application
 {
-    public partial class AppShell : Shell
+    public App()
     {
-        public AppShell()
+        InitializeComponent();
+
+        MainPage = new NavigationPage(new MainPage())
         {
-            InitializeComponent();
-        }
+            BarBackgroundColor = Color.FromArgb("#2980B9"),
+            BarTextColor = Colors.White
+        };
     }
+
+   
 }

@@ -10,7 +10,7 @@
             VerticalOptions="Center">
 
             <Image
-                Source="dotnet_bot.png"
+                Source="https://w7.pngwing.com/pngs/432/452/png-transparent-yellow-cheese-gruyxe8re-cheese-a-piece-of-cheese-angle-food-cheese-thumbnail.png"
                 SemanticProperties.Description="Cute dot net bot waving hi to you!"
                 HeightRequest="200"
                 HorizontalOptions="Center" />
@@ -28,11 +28,11 @@
                 FontSize="18"
                 HorizontalOptions="Center" />
 
-            <Button
+            <ImageButton
+                Source="https://w7.pngwing.com/pngs/432/452/png-transparent-yellow-cheese-gruyxe8re-cheese-a-piece-of-cheese-angle-food-cheese-thumbnail.png" 
+                Clicked="OnImageButtonClicked" 
                 x:Name="CounterBtn"
-                Text="Click me"
                 SemanticProperties.Hint="Counts the number of times you click"
-                Clicked="OnCounterClicked"
                 HorizontalOptions="Center" />
 
         </VerticalStackLayout>
