@@ -1,16 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Title="Main Buttons Tutorial"
              x:Class="sirmoloko.MainPage">
 
     <ScrollView>
-        <VerticalStackLayout
+        
+            <VerticalStackLayout
             Spacing="25"
             Padding="30,0"
             VerticalOptions="Center">
 
             <Image
-                Source="https://w7.pngwing.com/pngs/432/452/png-transparent-yellow-cheese-gruyxe8re-cheese-a-piece-of-cheese-angle-food-cheese-thumbnail.png"
+                Source="Center"
                 SemanticProperties.Description="Cute dot net bot waving hi to you!"
                 HeightRequest="200"
                 HorizontalOptions="Center" />
@@ -29,11 +31,14 @@
                 HorizontalOptions="Center" />
 
             <ImageButton
-                Source="https://w7.pngwing.com/pngs/432/452/png-transparent-yellow-cheese-gruyxe8re-cheese-a-piece-of-cheese-angle-food-cheese-thumbnail.png" 
-                Clicked="OnImageButtonClicked" 
+                VerticalOptions="Center" 
+                
                 x:Name="CounterBtn"
                 SemanticProperties.Hint="Counts the number of times you click"
-                HorizontalOptions="Center" />
+                HorizontalOptions="Center" 
+                Source="https://w7.pngwing.com/pngs/432/452/png-transparent-yellow-cheese-gruyxe8re-cheese-a-piece-of-cheese-angle-food-cheese-thumbnail.png">
+               
+            </ImageButton>
 
         </VerticalStackLayout>
     </ScrollView>

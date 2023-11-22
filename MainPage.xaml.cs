@@ -4,19 +4,20 @@
     {
         public MainPage()
         {
-            //InitializeComponent();
+            InitializeComponent();
 
             Title = "Main";
-            Button toCommonPageBtn = new Button
+
+            var toCommonPageBtn = new ImageButton
             {
-                Text = "Common",
+                Source = "https://w7.pngwing.com/pngs/645/674/png-transparent-gruyere-cheese-processed-cheese-shop-afacere-dairy-cheese-food-building-cheese-thumbnail.png",
                 HorizontalOptions = LayoutOptions.Start
             };
             toCommonPageBtn.Clicked += ToCommonPage;
 
-            Button toModalPageBtn = new Button
+            var toModalPageBtn = new ImageButton
             {
-                Text = "Modal",
+                Source = "https://w7.pngwing.com/pngs/432/452/png-transparent-yellow-cheese-gruyxe8re-cheese-a-piece-of-cheese-angle-food-cheese-thumbnail.png",
                 HorizontalOptions = LayoutOptions.Start
             };
             toModalPageBtn.Clicked += ToModalPage;
@@ -24,17 +25,14 @@
             Content = new StackLayout { Children = { toCommonPageBtn, toModalPageBtn } };
         }
 
-        private async void ToModalPage(object? sender, EventArgs e)
+        private async void ToModalPage(object sender, EventArgs e)
         {
             await Navigation.PushModalAsync(new ModalPage());
         }
-        private async void ToCommonPage(object? sender, EventArgs e)
+
+        private async void ToCommonPage(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new CommonPage());
-        }
-        private async void OnImageButtonClicked(object sender, EventArgs e)
-        {
-            await Navigation.PushAsync(new ModalPage());
         }
     }
 
